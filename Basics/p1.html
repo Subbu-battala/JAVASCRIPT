@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDITIONAL STATEMENTS</title>
+</head>
+<body>
+
+  <h1>
+    use switch key = add,sum,mul,div,mod a and b
+  </h1>
+
+  <button onclick="codeHandler()">EXECUTE CODE</button>
+  <script>
+
+    function codeHandler(){
+        var key = prompt('Enter any one operation value of add,sub,mul,div,mod?');
+        var a = prompt('Enter the value of a?');
+        var b = prompt('Enter the value of b?');
+
+               //constructor starts with caps like Number
+
+        var x = Number(a);
+        var y = Number(b);
+        var res = 0;
+
+ 
+
+        switch(key){
+            case "add":
+            res=x + y;
+            document.write(`<h1> Addition of 2 number = ${res} </h1>`);
+            break;
+
+            case "sub":
+            res=x - y;
+            document.write(`<h1> Sub of 2 number = ${res} </h1>`);
+            break;
+
+            case "mul":
+            res=x * y;
+            document.write(`<h1> mul of 2 number = ${res} </h1>`);
+            break;
+
+            case "div":
+             if(x > y){
+                res = x/y;
+             }else{
+                res = y/x;
+             }
+             document.write(`<h1> div of 2 number = ${res} </h1>`);
+            break;
+            
+            case "mod":
+             if(x > y){
+                res = x%y;
+             }else{
+                res = y%x;
+
+             }
+             document.write(`<h1> mod of 2 number = ${res} </h1>`);
+            break;
+            default:document.write(`<h1>Choose proper operations </h1>`);
+
+        }
+
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- array => is a group of similar data types (but in javascript is different data types)
+    1. literal type(single)
+        i)array literal
+        ii)array using constructor
+        ii) array as a constructor parameter
+    2. object array
+    3. json(is server response) (javascript object notation) array (response of rest [representational state transfer] ) API-->
+
+    <script>
+        //array  literal
+         var num = [12,2,3,4,5,]; //numbers
+         var user =['kranthi','umesh','krishna'];//strings
+         var arr = [true,1345,"admin@gmail.com",123,343 ];//mix type
+
+         document.write(`<h3> ${arr[0]} </h3>`); //arrName index
+         document.write(`<h3> ${arr} </h3>`);
+
+         document.write(`<h3> ${user[2]} </h3>`);
+         document.write(`<h3> ${user} </h3>`);
+
+         document.write(`<h3> ${num[4]} </h3>`);
+         document.write(`<h3> ${num} </h3>`);
+
+         for(i=0; i< user.length; i++){
+            document.write(`<h3 style = 'color: orangered;'> ${user[i]} </h3>`);
+         }
+    </script>
+</body>  
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Custom construtor</h3>
+
+        <script>
+                // class constructor / Function Constructor
+            function Car() {
+                var x = 12;
+                this.title = "jeep";
+                this.model = 2021;
+                this.fuel = "petrol";
+                this.display = function() {
+                    document.write(`<h3> display function </h3>`)
+                }
+            }
+
+            /* ref / instance of an construtor */
+
+            var a = new Car();
+
+            console.log(a);
+
+            document.write(`<h3> ${a.title} </h3>`); //instance.key
+            document.write(`<h3> ${ a["model"]} </h3>`); // instance ['key']
+            document.write(`<h3> ${ a.fuel } </h3>`)
+        </script>
+
+        <!-- <script>
+            function User() {
+                var x = 21;
+                this.name = "subbu";
+                this.height = 5.6;
+                this.hobbies = "bike riding, playing cricket"
+                this.food = "Biryani"
+
+            }
+
+            let s = new User();
+
+            console.log(s);
+
+            document.write(`<h3> ${ s.hobbies } </h3>`)
+        </script> -->
+    </body>
+</html>
