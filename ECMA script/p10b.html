@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //javascript v8 complier => brower es -5
+            //constructor function
+            function user() {
+                this.name = "raju"
+                this.print= function (){
+                    document.write(`<h1> hi${this.name},welcome to javascrpit
+                    </h1>`);
+                },
+                this.sayHi = function () {
+                    document.write(`<h1> say hi to ${this.name}</h1>`);
+                }
+                
+            };
+            //instance to constrector
+            let y = new user ();
+            y.print();
+            y.sayHi();
+        </script>
+    </body>
+</html>

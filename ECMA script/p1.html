@@ -6,6 +6,15 @@
         <title>Document</title>
     </head>
     <body>
-        
+        <h3>Let and const over var</h3>
+
+        <script>
+            if (10<40){
+                const x = 120;//var =>global scope varible ,let &const =>local scope /block scope varible
+                document.write(`<h2> inside the block = ${x}</h2>`);
+            }
+
+            document.write(`<h1> outside the block =${x}</h1>`); //let or const => Referance error
+        </script>
     </body>
 </html>

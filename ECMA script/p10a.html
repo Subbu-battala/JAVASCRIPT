@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //ecma script 6 class -> grou of object (state [var]& behaviors [methods/funcations])
+            class user{
+                constructor(){
+                    this.name ="balu";//state
+                }
+                //methods
+                print(){
+                    document.write(`<h1> hi ${this.name},welcome to javascrpit</h1>`);
+                }
+                sayHi(){
+                    document.write(`<h1> say hi to${this.name}</h1>`);
+                }
+            }
+            //print(); //direct call not possile 
+
+            let x = new user();
+            x.print();
+            x.sayHi();
+            document.write(`<h3> name is = ${x.name}</h3>`);
+        </script>
+    </body>
+</html>
